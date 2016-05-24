@@ -50,6 +50,48 @@ public class Snake : MonoBehaviour
         ResetSpeed();
     }
 
+    void OnSwipe(SwipeGesture gesture)
+    {
+        GameObject selection = gesture.StartSelection;
+        string str = "Swiped " + gesture.Direction + " with finger " + gesture.Fingers[0] +
+            " (velocity:" + gesture.Velocity + ", distance: " + gesture.Move.magnitude + " )";
+        Debug.Log(str);
+
+        switch (gesture.Direction)
+        {
+            case FingerGestures.SwipeDirection.Right:
+                if (dir != -Vector2.right && canChangeDir)
+                {
+                    dir = Vector2.right;
+                    canChangeDir = false;
+                }
+                break;
+            case FingerGestures.SwipeDirection.Left:
+                if (dir != -Vector2.left && canChangeDir)
+                {
+                    dir = Vector2.left;
+                    canChangeDir = false;
+                }
+                break;
+            case FingerGestures.SwipeDirection.Up:
+                if (dir != -Vector2.up && canChangeDir)
+                {
+                    dir = Vector2.up;
+                    canChangeDir = false;
+                }
+                break;
+            case FingerGestures.SwipeDirection.Down:
+                if (dir != -Vector2.down && canChangeDir)
+                {
+                    dir = Vector2.down;
+                    canChangeDir = false;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D coll)
     {
         // Food?
@@ -85,7 +127,7 @@ public class Snake : MonoBehaviour
         {
             if (dir != Vector2.up && canChangeDir)
             {
-                dir = -Vector2.up;    // '-up' means 'down'
+                dir = -Vector2.up;
                 canChangeDir = false;
             }
         }
@@ -93,7 +135,7 @@ public class Snake : MonoBehaviour
         {
             if (dir != Vector2.right && canChangeDir)
             {
-                dir = -Vector2.right; // '-right' means 'left'
+                dir = -Vector2.right;
                 canChangeDir = false;
             }
         }
