@@ -16,6 +16,7 @@ public class Game : MonoBehaviour
     public Snake snake;
     public Toggle toggle;
     public Text textLose;
+    public Button btn_WechatShare;
     public Flash flash;
 
     public static GameStatus curStatus = GameStatus.Start;
@@ -65,6 +66,7 @@ public class Game : MonoBehaviour
 
             textLose.gameObject.SetActive(false);
             toggle.gameObject.SetActive(false);
+            btn_WechatShare.gameObject.SetActive(false);
             flash.Stop();
 
             snake.OnLose += OnLose;
@@ -90,6 +92,9 @@ public class Game : MonoBehaviour
     private void OnLose()
     {
         curStatus = GameStatus.GameOver;
+
+        btn_WechatShare.gameObject.SetActive(true);
+
         textLose.text = "Game Over & Score is " + score;
         textLose.gameObject.SetActive(true);
 

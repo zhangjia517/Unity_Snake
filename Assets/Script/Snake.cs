@@ -113,7 +113,7 @@ public class Snake : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(moveSpeed);
+        //Debug.Log(moveSpeed);
         // Move in a new Direction?
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
