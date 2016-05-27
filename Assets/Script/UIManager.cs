@@ -2,19 +2,20 @@
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField]
-    private WeChatPluginScript m_weChatShareObject;
+		[SerializeField]
+		private WeChatPluginScript m_weChatShareObject;
 
-    private void Start()
-    {
-    }
+		private void Start ()
+		{
+		}
 
-    private void Update()
-    {
-    }
+		private void Update ()
+		{
+		}
 
-    public void OnClick()
-    {
-        m_weChatShareObject.Share();
-    }
+		public void OnClick ()
+		{
+				Debug.Log ("666666");
+				m_weChatShareObject.Share ();
+		}
 }
