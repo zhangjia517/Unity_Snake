@@ -46,6 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-Library
-Temp
-ProjectSettings
+Library/
+Temp/
+ProjectSettings/
+Library/assetDatabase3
