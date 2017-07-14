@@ -1,13 +1,13 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{4FD42137-5728-82DE-CA47-3F015A3C57FE}") = "Unity_Snake", "Assembly-CSharp-firstpass.csproj", "{12225F02-7446-311C-3846-8829825A6AB4}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Snake", "Assembly-CSharp-firstpass.csproj", "{12225F02-7446-311C-3846-8829825A6AB4}"
 EndProject
-Project("{4FD42137-5728-82DE-CA47-3F015A3C57FE}") = "Unity_Snake", "Assembly-CSharp.csproj", "{5FC3F003-5A7C-A513-0B7D-4EEC50BBF45D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Snake", "Assembly-CSharp.csproj", "{5FC3F003-5A7C-A513-0B7D-4EEC50BBF45D}"
 EndProject
-Project("{4FD42137-5728-82DE-CA47-3F015A3C57FE}") = "Unity_Snake", "Assembly-CSharp-Editor-firstpass.csproj", "{D05D3579-54C7-E5B5-EFAB-71FB918FE583}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Snake", "Assembly-CSharp-Editor-firstpass.csproj", "{D05D3579-54C7-E5B5-EFAB-71FB918FE583}"
 EndProject
-Project("{4FD42137-5728-82DE-CA47-3F015A3C57FE}") = "Unity_Snake", "Assembly-CSharp-Editor.csproj", "{E150BE08-39D2-5796-F3CF-C6DC5DBDF059}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Snake", "Assembly-CSharp-Editor.csproj", "{E150BE08-39D2-5796-F3CF-C6DC5DBDF059}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
